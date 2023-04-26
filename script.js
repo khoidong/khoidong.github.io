@@ -75,31 +75,35 @@ function formHasErrors()
     {
         hasErrors = true;
     }
-
-    let emailRegex = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/);
-    let phoneRegex = new RegExp(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/);
-
-    let emailInput = document.getElementById("email");
-    let phoneInput = document.getElementById("phonenum");
-    if(!emailRegex.test(emailInput.value))
-    {
-        document.getElementById("invalid_email").style.display = "block";
-        hasErrors = true;
-    }
     else
     {
-        document.getElementById("invalid_email").style.display = "none";
+        let emailRegex = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/);
+        let phoneRegex = new RegExp(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/);
+
+        let emailInput = document.getElementById("email");
+        let phoneInput = document.getElementById("phonenum");
+        if(!emailRegex.test(emailInput.value))
+        {
+            document.getElementById("invalid_email").style.display = "block";
+            hasErrors = true;
+        }
+        else
+        {
+            document.getElementById("invalid_email").style.display = "none";
+        }
+
+        if(!phoneRegex.test(phoneInput.value))
+        {
+            document.getElementById("invalid_phonenum").style.display = "block";
+            hasErrors = true;
+        }
+        else
+        {
+            document.getElementById("invalid_phonenum").style.display = "none";
+        }
     }
 
-    if(!phoneRegex.test(phoneInput.value))
-    {
-        document.getElementById("invalid_phonenum").style.display = "block";
-        hasErrors = true;
-    }
-    else
-    {
-        document.getElementById("invalid_phonenum").style.display = "none";
-    }
+    
 
     return hasErrors;
 
