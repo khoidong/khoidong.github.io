@@ -1,0 +1,89 @@
+<!--------w-----------
+
+    Project 4
+    Name: Khoi Dong	
+    Date: 15 April, 2023
+    Description: Website Development & Deployment
+
+--------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Development & Deployment</title>
+    <link rel="stylesheet" href="contactpagestyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="Images\khoi-logo.png" alt="">
+        <nav class="headerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projectspage.html">Services</a></li>
+                <li><a href="contactpage.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="top_section">
+            <div>
+               <p>Contact</p> 
+            </div>
+            <img class="contact_img" src="Images\khoi_portrait.png" alt="">
+        </section>
+        <form id="message_form" method="post" action="index.html">
+            <fieldset>
+                <legend>Message Me</legend>
+                <ol>
+                    <li>
+                        <label for="fullname">Full Name</label>
+                        <input type="text" name="fullname" id="fullname" autofocus>
+                        <p class="contactError_error" id="fullname_error">* Required field</p>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email">
+                        <p class="contactError_error" id="email_error">* Required Field</p>
+                        <p class="contactError_error" id="invalid_email">* Invalid Email</p>
+                    </li>
+                    <li>
+                        <label for="phonenum">Phone Number</label>
+                        <input type="tel" name="phonenum" id="phonenum">
+                        <p class="contactError_error" id="phonenum_error"> * Required field</p>
+                        <p class="contactError_error" id="invalid_phonenum">* Invalid Phone Number</p>
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="4"></textarea>
+                    </li>
+                </ol>
+                <button id="submit" class="button_submit" type="submit">Send</button>
+                <button id="reset" class="button_reset" type="reset">Clear</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer class="footer_container">
+        <div class="footer">
+            <div class="footer_img">
+                <img class="footer_logo" src="Images\khoi-logo.png" alt="">
+            
+                <p>Office Address: 160 Princess Street, <br> Winnipeg, Manitoba, R3T2K9</p>
+            </div>
+            <nav class="footerNav">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicespage.html">Services</a></li>
+                    <li><a href="contactpage.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer_copyright">
+            <p>Copyright©2023</p>
+        </div>
+    </footer>
+</body>
+</html>

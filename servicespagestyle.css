@@ -1,0 +1,156 @@
+/* <!--------w-----------
+
+    Project 4
+    Name: Khoi Dong	
+    Date: 15 April, 2023
+    Description: Website Development & Deployment
+
+---------------------> */
+html,
+body,
+header,
+nav,
+main,
+footer,
+section,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h4,
+img 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: white ;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    width: 80%;
+    background-color: #fff;
+    margin: 10px auto;
+    
+}
+a
+{
+    text-decoration: none;
+}
+
+.header 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid grey ;
+    padding: 25px;
+    row-gap: 15px;
+}
+
+.headerNav ul
+{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+.headerNav ul li
+{
+    padding: 5px;
+    font-size: 20px;  
+}
+.headerNav ul li a
+{
+    color: #024250;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.headerNav ul li :hover
+{
+    background-color: #e3fc74;
+}
+.logo
+{
+    width: 150px;
+}  
+
+.top_section
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 25px;
+    background-color: #EEF1EE ;
+}
+.top_section p
+{
+    font-size: 60px;
+    font-weight: bolder;
+    padding-top: 80px;
+}
+.service_img
+{
+    border-radius: 100%;
+    width: 30%;
+    padding: 25px;
+    /* padding-bottom: 25px; */
+    
+} 
+.middle_section
+{
+    padding: 50px 0px;
+}
+.middle_section h2
+{
+    color:#024250;
+    text-align: center;
+    font-size: 30px;
+    padding:25px 0px;
+}
+
+.footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content:space-between; */
+    column-gap: 100px;
+    row-gap: 30px;
+    
+}
+.footer_container
+{
+    background-color: #EEF1EE;
+    padding: 25px;
+}
+
+.footerNav li
+{
+    list-style: none;
+    padding: 5px 0px;
+}
+.footer_logo
+{
+    width:100px;
+}
+.footerNav li a
+{
+    color:#024250;
+    font-weight: 500;
+}
+.footerNav li :hover
+{
+    background-color: #e3fc74;
+}
+.footer_copyright
+{
+    text-align: end;
+    border-top: 1px solid grey;
+    padding-top: 20px;
+}
