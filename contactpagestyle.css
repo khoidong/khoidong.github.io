@@ -33,7 +33,7 @@ body
     font-family: 'Sofia Sans', sans-serif;
     font-size: 15px;
     font-weight: 500;
-    width: 80%;
+    max-width: 1000px;
     background-color: #fff;
     margin: 10px auto;
     
