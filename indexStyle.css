@@ -34,7 +34,7 @@ body
     font-family: 'Sofia Sans', sans-serif;
     font-size: 15px;
     font-weight: 500;
-    width: 80%;
+    max-width: 1000px;
     background-color: #fff;
     margin: 10px auto;
     
@@ -131,9 +131,10 @@ a
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 20px;
     padding: 100px 0px 100px;
-    background-color: #fff;  
+    background-color: #fff;
+    justify-content: center;
 }
 .about_img
 {
@@ -141,7 +142,7 @@ a
 }
 .about_info
 {
-    max-width: 400px;
+    max-width: 500px;
     padding: 0px 25px 0px 25px;
 }
 .about_info h2
@@ -151,6 +152,7 @@ a
 }
 .about_info p
 {
+    font-size: 18px;
     text-align:justify;
     padding: 5px;
 }

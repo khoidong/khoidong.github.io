@@ -114,6 +114,10 @@ a
     font-size: 30px;
     padding:25px 0px;
 }
+.middle_section p
+{
+    font-size: 18px;
+}
 
 .footer
 {
