@@ -34,7 +34,7 @@
             </div>
             <img class="contact_img" src="Images\khoi_portrait.png" alt="">
         </section>
-        <form id="message_form" method="post" action="index.html">
+        <form id="message_form" >
             <fieldset>
                 <legend>Message Me</legend>
                 <ol>
@@ -57,7 +57,8 @@
                     </li>
                     <li>
                         <label for="message">Message</label>
-                        <textarea name="message" id="message" rows="4"></textarea>
+                        <textarea name="message" id="message" rows="4"></textarea>                        
+                        <p class="contactError_error" id="message_error"> * Required field</p>
                     </li>
                 </ol>
                 <button id="submit" class="button_submit" type="submit">Send</button>

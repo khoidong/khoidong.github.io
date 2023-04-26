@@ -138,6 +138,10 @@ a
     line-height: 30px;
     width: 250px;
 }
+.contactError_error
+{
+    color: red;
+}
 .button_submit
 {
     border: 2px solid #024250;
